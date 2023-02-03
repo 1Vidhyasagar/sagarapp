@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/login.css">
+    <title>login</title>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <div id="login" class="container">
+
+  <div class="row-fluid">
+    <div class="span12">
+      <div class="login well well-small">
+        <div class="center">        <h2>Welcome</h2>
+
+        </div>
+        <form action="/login" class="login-form" id="UserLoginForm" method="post" accept-charset="utf-8">
+          <div class="control-group">
+            <div class="input-prepend">
+              <span class="add-on"><i class="icon-user"></i></span>
+              <input name="username" required="required" placeholder="email" maxlength="255" type="text" id="UserUsername"> 
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="input-prepend">
+              <span class="add-on"><i class="icon-lock"></i></span>
+              <input name="password" required="required" placeholder="Password" type="password" id="UserPassword"> 
+            </div>
+          </div>
+        
+          <div class="control-group">
+            <input class="btn btn-primary btn-large btn-block" id="login-button" type="submit" value="Sign in"> 
+          </div>
+          </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+ </div>
+</body>
+</html>

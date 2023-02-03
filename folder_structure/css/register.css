@@ -1,0 +1,40 @@
+body{
+  background-image: linear-gradient(to right, #ffffff, #e5e1fe, #c8c4fc, #a8a8fb, #838df9, #838df9, #838df9, #838df9, #a8a8fb, #c8c4fc, #e5e1fe, #ffffff);
+}
+
+.main {
+    padding: 20px;
+    font-family: 'Helvetica', serif;
+    box-shadow: 5px 5px 7px 5px #888888;
+    text-align: center;
+    margin: 15px auto;
+ background: rgba(255, 254, 254, 0.6)
+}
+
+
+.main h1 {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Helvetica', serif;
+}
+
+input {
+    font-family: 'Helvetica', serif;
+    width: 100%;
+    font-size: 20px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-bottom: 2px solid #767474;
+}
+
+input[type=submit] {
+    font-family: 'Helvetica', serif;
+    width: 40%;
+    background-color: #005fcc;
+    border: none;
+    color: white;
+    padding: 4px 32px;
+    margin: 32px;
+    border-radius: 10px;
+}
