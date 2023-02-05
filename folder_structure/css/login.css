@@ -1,28 +1,29 @@
 
-.container{
-  background-image: linear-gradient(to right, #ffffff, #e5e1fe, #c8c4fc, #a8a8fb, #838df9, #838df9, #838df9, #838df9, #a8a8fb, #c8c4fc, #e5e1fe, #ffffff);
-
-   
+body{
+  background-image: linear-gradient(to right, #ffffff, #e5e1fe, #c8c4fc, #a8a8fb, #838df9, #838df9, #838df9, #838df9, #a8a8fb, hsl(244, 90%, 88%), #e5e1fe, #ffffff);  
 }
 
 #login .center {
   text-align: center;
-  
-  
-  
+ 
 }
-
 
 #login .login {
   max-width: 300px;
   margin: 35px auto;
-      padding: 20px;
-    font-family: 'Helvetica', serif;
-    box-shadow: 5px 5px 7px 5px #888888;
-     background:white
+  padding: 30px;
+  font-family: 'Helvetica', serif;
+  box-shadow: 5px 5px 7px 5px #888888;
+  background:white;
+  border-radius: 20px;
 
 }
 
 #login .login-form{
   padding:0px 25px;
+   margin-top: 30px
+}
+p{
+  text-align: center; 
+  padding-top: 30px
 }
