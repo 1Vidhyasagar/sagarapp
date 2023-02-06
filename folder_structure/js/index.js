@@ -4,6 +4,24 @@ var mongoose = require("mongoose");
 
 const app = express();
 
+const database = module.exports =()=>{
+  const connectionParams = {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }
+  try{ 
+    mongoose.connect(
+      "mongodb+srv://vidhyasagar:Vidhyasagar11@cluster0.365nnmx.mongodb.net/mydb?retryWrites=true&w=majority",
+      connectionParams
+    );
+    console.log('db conn success')
+
+  }catch(error){
+    console.log('db not conn')
+  }
+}
+database();
+
 app.use(bodyParser.json());
 app.use(express.static("folder_structure"));
 app.use(
@@ -14,15 +32,15 @@ app.use(
 app.set("view engine", "ejs");
 mongoose.set("strictQuery", false);
 
-mongoose.connect("mongodb://0.0.0.0:27017/mydb", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+// mongoose.connect("mongodb://0.0.0.0:27017/mydb", {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+// });
 
 var db = mongoose.connection;
 
-db.on("error", () => console.log("Error in Connecting to Database"));
-db.once("open", () => console.log("Connected to Database"));
+db.on("error", console.error.bind(console, "connection error:"));
+db.once("open", () => console.log("Connected to atlas Database"));
 
 app.post("/sign_up", (req, res) => {
   var name = req.body.name;
