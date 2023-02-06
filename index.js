@@ -29,6 +29,11 @@ app.use(
     extended: true,
   })
 );
+
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/folder_structure/index.html");
+}); 
+
 app.set("view engine", "ejs");
 mongoose.set("strictQuery", false);
 
